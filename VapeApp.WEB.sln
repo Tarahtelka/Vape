@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VapeApp.WEB", "VapeApp.WEB\VapeApp.WEB.csproj", "{45B1B3C7-8245-40E8-BB3D-71E4FD51A38A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vape.DAL", "Vape.DAL\Vape.DAL.csproj", "{26358473-F67B-4867-A53B-F4576AD662DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vape.BLL", "Vape.BLL\Vape.BLL.csproj", "{ED1E22F5-2375-471C-A272-454DF36D6428}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45B1B3C7-8245-40E8-BB3D-71E4FD51A38A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B1B3C7-8245-40E8-BB3D-71E4FD51A38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B1B3C7-8245-40E8-BB3D-71E4FD51A38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B1B3C7-8245-40E8-BB3D-71E4FD51A38A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26358473-F67B-4867-A53B-F4576AD662DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26358473-F67B-4867-A53B-F4576AD662DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26358473-F67B-4867-A53B-F4576AD662DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26358473-F67B-4867-A53B-F4576AD662DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED1E22F5-2375-471C-A272-454DF36D6428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1E22F5-2375-471C-A272-454DF36D6428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1E22F5-2375-471C-A272-454DF36D6428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1E22F5-2375-471C-A272-454DF36D6428}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

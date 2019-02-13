@@ -1,0 +1,26 @@
+﻿@model IEnumerable<VapeApp.WEB.Models.BoxModViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+<table class="table">
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                @Html.ActionLink("Подробнее", "GetBoxMod", new { id = item.Id }, new { @class = "navbar-brand" })
+            </td>
+        </tr>
+    }
+</table>
+

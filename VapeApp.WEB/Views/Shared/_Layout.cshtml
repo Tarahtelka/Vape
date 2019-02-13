@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                    @Html.ActionLink("Главная", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">@Html.ActionLink("Full Vape", "Index", "FullVape")</li>
+                    <li class="active">@Html.ActionLink("Box Mod", "Index", "BoxMod")</li>
+                    <li class="active">@Html.ActionLink("Mech Mod", "Index", "MechMod")</li>
+                    <li class="active">@Html.ActionLink("Fluid", "Index", "Fluid")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Атомайзер <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="active">@Html.ActionLink("Drip", "Index", "Drip")</li>
+                            <li class="active">@Html.ActionLink("Tank", "Index", "Tank")</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="navbar-brand">
+                            @User.Identity.Name
+                        </li>
+                        <li>
+                            @Html.ActionLink("Выйти", "Logout", "Account", new { area = "" }, new { @class = "navbar-brand" })
+                        </li>
+                    }
+                    else
+                    {
+                        <li>
+                            @Html.ActionLink("Войти", "Login", "Account", new { area = "" }, new { @class = "navbar-brand" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Регистрация", "Register", "Account", new { area = "" }, new { @class = "navbar-brand" })
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - VapeShop</p>
+        </footer>
+    </div>    
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

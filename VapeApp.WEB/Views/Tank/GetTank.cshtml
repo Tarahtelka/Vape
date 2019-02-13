@@ -1,0 +1,21 @@
+﻿@model VapeApp.WEB.Models.TankViewModel
+@{
+    ViewBag.Title = "GetFluid";
+}
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Название: @Html.DisplayFor(modelitem => Model.Name)</h2>
+            <h2>Страна производитель: @Html.DisplayFor(modelitem => Model.Contry)</h2>
+            <h2>Компания: @Html.DisplayFor(modelitem => Model.Company)</h2>
+            <h2>Бренд: @Html.DisplayFor(modelitem => Model.Brand)</h2>
+            <h2>Количество стоек: @Html.DisplayFor(modelitem => Model.Racks)</h2>
+            <h2>Диаметр: @Html.DisplayFor(modelitem => Model.Diameter)</h2>
+            <h2>Объём: @Html.DisplayFor(modelitem => Model.Amount)</h2>
+            <h2>Цена: @Html.DisplayFor(modelitem => Model.Price)</h2>
+        </div>
+        <div class="col-md-6">
+            @Html.Action("GetImgTank", "Tank", new { id = Model.Id })
+        </div>
+    </div>
+
+

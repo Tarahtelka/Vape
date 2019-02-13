@@ -1,0 +1,20 @@
+﻿@model VapeApp.WEB.Models.BoxModViewModel
+@{
+    ViewBag.Title = "GetFullVape";
+}
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Название: @Html.DisplayFor(modelitem => Model.Name)</h2>
+            <h2>Страна производитель: @Html.DisplayFor(modelitem => Model.Contry)</h2>
+            <h2>Компания: @Html.DisplayFor(modelitem => Model.Company)</h2>
+            <h2>Бренд: @Html.DisplayFor(modelitem => Model.Brand)</h2>
+            <h2>Аккумулятор: @Html.DisplayFor(modelitem => Model.Accumulator)</h2>
+            <h2>Мощьность: @Html.DisplayFor(modelitem => Model.Outturn)</h2>
+            <h2>Цена: @Html.DisplayFor(modelitem => Model.Price)</h2>
+        </div>
+        <div class="col-md-6">
+            @Html.Action("GetImgBoxMod", "BoxMod", new { id = Model.Id })
+        </div>
+    </div>
+
+
